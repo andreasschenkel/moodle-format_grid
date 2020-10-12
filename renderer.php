@@ -959,7 +959,7 @@ class format_grid_renderer extends format_section_renderer_base {
                         $this->make_block_icon_topics_editing($thissection, $contextid, $urlpicedit);
                     } else {
                         if (!$sectiongreyedout) {
-                            echo html_writer::link($singlepageurl.'&section='.$thissection->section, $content, array(
+                            echo html_writer::link($singlepageurl.'&section='.$thissection->section.'#section-'.$thissection->section, $content, array(
                                 'id' => 'gridsection-'.$thissection->section,
                                 'class' => 'gridicon_link',
                                 'role' => 'link'));
